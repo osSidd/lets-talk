@@ -4,8 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const socket = require('socket.io')
+const helmet = require('helmet')
 
 var app = express();
+app.use(helment())
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -29,7 +31,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-const server = app.listen(3000, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
   console.log('server started')
 })
 
