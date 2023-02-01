@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+    <title>Lets Talk</title>
+</head>
+<body>
+    <div class="chat">
+        <div class="chat-window">
+            <div id="feedback"></div>
+            <div id = "output" class="chat-output"></div>
+        </div>
+        <div class="writing">
+            <input id="handle" placeholder="Handle" type="text">
+            <input id="message" placeholder="Message" type="text">
+            <button id="send">send</button>
+        </div>
+    </div>
+    <script src="./javascripts/index.js" defer></script>
+</body>
+</html>

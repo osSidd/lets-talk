@@ -1,0 +1,47 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.chat{
+  width:75%;
+  min-width: 350px;
+  height:85vh;
+  background-color: aliceblue;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.chat-window{
+  height:75%;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.output-window{
+  height:100%;
+}
+
+.writing{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input{
+  width:75%;
+  padding:12px;
+  margin:5px auto;
+}
+
+button{
+  margin:1rem 5rem;
+  padding:12px;
+  border: none;
+  background-color: blueviolet;
+  color: aliceblue;
+  font-size: large;
+}
+
