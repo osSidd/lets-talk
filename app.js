@@ -7,7 +7,7 @@ const socket = require('socket.io')
 const helmet = require('helmet')
 
 var app = express();
-app.use(helment())
+app.use(helmet())
 
 app.use(logger('dev'));
 app.use(express.json());
